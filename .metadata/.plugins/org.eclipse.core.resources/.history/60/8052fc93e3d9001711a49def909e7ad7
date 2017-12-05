@@ -38,7 +38,6 @@ public class TwoQuestions {
 			System.out.println();
 			System.out.println("Is it a PAPER CLIP?!");
 		}
-		keyboard.close();
 	}
 
 }
