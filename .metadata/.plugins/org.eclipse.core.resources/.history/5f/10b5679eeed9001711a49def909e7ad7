@@ -12,7 +12,7 @@ public class Dice {
 		System.out.println();
 		System.out.println("Roll #1: "+r1);
 		System.out.println("Roll #2: "+r2);
-		System.out.println("The total is "+t+"!");
+		System.out.println("The total is "+t+ "!");
 	}
 
 }
