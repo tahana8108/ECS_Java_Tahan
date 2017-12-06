@@ -1,0 +1,36 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class HiLowLimited {
+	public static void main(String[] args){
+		Random r = new Random();
+		Scanner keyboard = new Scanner(System.in);
+		int x, res;
+		x = 1+r.nextInt(100);
+		int g = 7;
+		
+		System.out.println("I'm thinking of a number between 1-100. You have 7 guesses.");
+		System.out.print(">");
+		res = keyboard.nextInt();
+		
+		System.out.println();
+		
+		while (g!=0 || g!=10){
+			if (res>x){
+				System.out.println("Sorry, you are too high. I was thinking of " +x+ ".");
+				g--;
+			}
+			else if (res<x){
+				System.out.println("Sorry, you are too low. I was thinking of " +x+ ".");
+				g--;
+			}
+			else{
+				System.out.println("You guessed it! What are the odds?!?.");
+				g=10;
+			}
+		}
+		keyboard.close();
+		
+	}
+
+}
