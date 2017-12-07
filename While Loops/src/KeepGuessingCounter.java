@@ -6,7 +6,7 @@ public class KeepGuessingCounter {
 		Random r = new Random();
 		Scanner keyboard = new Scanner(System.in);
 		int x = 1+r.nextInt(10);
-		int g=0;
+		int g=1;
 		
 		System.out.println("I have chosen a number between 1 and 10. Try to guess it.");
 		System.out.print("Your guess: ");
