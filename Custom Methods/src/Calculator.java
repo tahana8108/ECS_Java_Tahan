@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args){
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("This is a calculator!");
+		System.out.println("Insert your calculation as \"### operator ###\"");
+		double solution = 0;
+		
+		while (1+1==2){
+		
+		System.out.print(">");
+		int num1 = keyboard.nextInt();
+		String opp = keyboard.next();
+		int num2 = keyboard.nextInt();
+		System.out.println();
+		
+		
+		if (opp.equals("+")){
+			solution = add(num1, num2);
+		}
+		else if (opp.equals("-")){
+			solution = sub(num1, num2);
+		}
+		else if (opp.equals("*")){
+			solution = mul(num1, num2);
+		}
+		else if (opp.equals("/")){
+			solution = div(num1, num2);
+		}
+		else if (opp.equals("^")){
+			solution = pow(num1, num2);
+		}
+		
+		System.out.println(solution);
+		}
+	
+		
+	}
+	
+	public static double add(int a, int b){
+		double t = a+b;
+		
+		return t;
+	}
+	public static double sub(int a, int b){
+		double t = a-b;
+		
+		return t;
+	}
+	public static double mul(int a, int b){
+		double t = a*b;
+		
+		return t;
+	}
+	public static double div(int a, int b){
+		double t = a/b;
+		
+		return t;
+	}
+	public static double pow(int a, int b){
+		double t = 1;
+		for (int i=1; i<=b; i++){
+			t = t*a;
+		}
+		
+		return t;
+	}
+
+}
