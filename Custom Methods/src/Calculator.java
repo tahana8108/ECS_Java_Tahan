@@ -6,15 +6,15 @@ public class Calculator {
 		
 		System.out.println("This is a calculator!");
 		System.out.println("Insert your calculation as \"### operator ###\"");
-		double solution = 0;
+		double solution = 0.0;
 		
 		while (1+1==2){
 		
 		System.out.print(">");
-		int num1 = keyboard.nextInt();
+		double num1 = keyboard.nextDouble();
 		String opp = keyboard.next();
-		int num2 = keyboard.nextInt();
-		System.out.println();
+		double num2 = keyboard.nextDouble();
+
 		
 		
 		if (opp.equals("+")){
@@ -34,32 +34,33 @@ public class Calculator {
 		}
 		
 		System.out.println(solution);
+		System.out.println();
 		}
 	
 		
 	}
 	
-	public static double add(int a, int b){
+	public static double add(double a, double b){
 		double t = a+b;
 		
 		return t;
 	}
-	public static double sub(int a, int b){
+	public static double sub(double a, double b){
 		double t = a-b;
 		
 		return t;
 	}
-	public static double mul(int a, int b){
+	public static double mul(double a, double b){
 		double t = a*b;
 		
 		return t;
 	}
-	public static double div(int a, int b){
+	public static double div(double a, double b){
 		double t = a/b;
 		
 		return t;
 	}
-	public static double pow(int a, int b){
+	public static double pow(double a, double b){
 		double t = 1;
 		for (int i=1; i<=b; i++){
 			t = t*a;
